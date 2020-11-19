@@ -3,21 +3,59 @@ $bg__blend--type: inherit;
 $bg__classes:
     "error",
     "comingsoon",
-    "privacy";
+    "privacy",
+    "index",
+    "sv-thumb",
+    "services",
+    "resources",
+    "support",
+    "contact",
+    "user";
 $bg__comingsoon-img: "../img/corporate.jpg";
+$bg__contact-img:
+    "../img/bgs/bg_4.jpg";
 $bg__error-img: "../img/corporate.jpg";
+$bg__index-img:
+    "../img/bgs/bg_1.jpg";
 $bg__privacy-img: "../img/privacy.jpg";
+$bg__resources-img:
+    "../img/bgs/bg_2.jpg";
+$bg__services-img:
+    "../img/services/green_energy.jpg";
+$bg__support-img:
+    "../img/bgs/bg_3.jpg";
+$bg__user-img:
+    "../img/bgs/bg_5.jpg";
+$bg__sv-thumb-img:
+    "../img/services/natural_gas.jpg",
+    "../img/services/industrial_materials.jpg",
+    "../img/services/petroleum.jpg",
+    "../img/services/mineral_resources.jpg",
+    "../img/services/power_solutions.jpg",
+    "../img/services/automotive.jpg";
 $bg__aoa:
     $bg__error-img,
     $bg__comingsoon-img,
-    $bg__privacy-img;
+    $bg__privacy-img,
+    $bg__index-img,
+    $bg__sv-thumb-img,
+    $bg__services-img,
+    $bg__resources-img,
+    $bg__support-img,
+    $bg__contact-img,
+    $bg__user-img;
 $body__min-height: 100%;
 $color__bg-1: #48bb78;
 $color__dark: #333;
+$color__dot: #cbd5e0;
 $color__transparent: transparent;
+$dot__margin-x:5px;
+$dot__size: 15px;
 $font-logo__family: 'Open Sans';
 $font-logo__size: 32px;
 $font-main__family: 'Open Sans';
 $font-main__size: 16px;
+$header__height: 106px;
+$icon__size: 5.5rem;
 $section__min-height: 100vh;
 $text__shadow: 0 0 3px $color__dark;
