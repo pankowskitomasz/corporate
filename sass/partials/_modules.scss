@@ -8,21 +8,32 @@
     @include background-blend($bg__blend--type, $color__bg-1);
 }
 
+%bg-scroll{
+    background-attachment: scroll;
+    background-position: center;
+}
+
+%bg-grayscale{
+    filter: grayscale(1);
+}
+
+.adjust{
+    &-top{
+        @include calc-param(min-height,100vh,$header__height);
+    }
+}
 .comingsoon{
     &-s1{
         @extend %bg-blend;
     }
 }
-.error{
+.contact{
     &-s1{
-        @extend %bg-blend;
+        @extend %bg-scroll;
+        background-position: bottom;
     }
 }
-.privacy{
-    &-container{
-        background-color: $color__transparent !important;
-        backdrop-filter: $backdrop__filter--privacy;
-    }
+.error{
     &-s1{
         @extend %bg-blend;
     }
@@ -37,6 +48,28 @@
         @include set-font-params($font-main__family,$font-main__size);
     }
 }
+.icon{
+    font-size: $icon__size !important;
+}
+.index{
+    &-s1{
+        @extend %bg-scroll;
+    }
+}
+.minh{
+    &-25vh{
+        min-height:25vh;
+    }
+    &-50vh{
+        min-height:50vh;
+    }
+    &-75vh{
+        min-height:75vh;
+    }
+    &-100vh{
+        min-height:100vh;
+    }
+}
 .navbar{
     &-toggler{
         &-icon{
@@ -44,9 +77,82 @@
         }
     }
 }
-
+.owl{
+    &-dot{
+        &.active{
+            background-color: darken($color__dot,50%) !important;
+        }
+        background-color: $color__dot !important;
+        height: $dot__size;
+        margin-right: $dot__margin-x;
+        outline: none !important;
+        width: $dot__size;
+    }
+    &-dots{
+        text-align: center;
+    }
+}
+.privacy{
+    &-container{
+        background-color: $color__transparent !important;
+        backdrop-filter: $backdrop__filter--privacy;
+    }
+    &-s1{
+        @extend %bg-blend;
+    }
+}
+.resources{
+    &-s1{
+        @extend %bg-scroll;
+        background-position: bottom;
+    }
+}
+.services{
+    &-s1{
+        @extend %bg-scroll;
+    }
+}
+.support{
+    &-s1{
+        @extend %bg-scroll;
+        background-position: bottom;
+    }
+}
+.sv{
+    &-thumb{
+        &-s1{
+            @extend %bg-scroll;
+            @extend %bg-grayscale;
+        }
+        &-s2{
+            @extend %bg-scroll;
+            @extend %bg-grayscale;
+        }
+        &-s3{
+            @extend %bg-scroll;
+            @extend %bg-grayscale;
+        }
+        &-s4{
+            @extend %bg-scroll;
+            @extend %bg-grayscale;
+        }
+        &-s5{
+            @extend %bg-scroll;
+            @extend %bg-grayscale;
+        }
+        &-s6{
+            @extend %bg-scroll;
+            @extend %bg-grayscale;
+        }
+    }
+}
 .text{
     &-shadow{
         text-shadow: $text__shadow;
+    }
+}
+.user{
+    &-s1{
+        @extend %bg-scroll;        
     }
 }
